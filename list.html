@@ -47,97 +47,59 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 <script type="text/javascript">
 
-var oCategory = [
+var oCategory =
+[
     {
+        'iCatNum'   : 1,
         'sCatName'  : 'HTML',
         'aBoard'    :
         [
-            {
-                'id' : 1,
-                'title' : 'test_Html_1'
-            },
-            {
-                'id' : 2,
-                'title' : 'test_Html_2'
-            },
-            {
-                'id' : 3,
-                'title' : 'test_Html_3'
-            },
-            {
-                'id' : 4,
-                'title' : 'test_Html_4'
-            }
+            { 'id' : 1, 'title' : 'test_Html_1' },
+            { 'id' : 2, 'title' : 'test_Html_2' },
+            { 'id' : 3, 'title' : 'test_Html_3' },
+            { 'id' : 4, 'title' : 'test_Html_4' }
         ]
     },
     {
+        'iCatNum'   : 2,
         'sCatName'  : 'CSS',
         'aBoard'    :
         [
-            {
-                'id' : 1,
-                'title' : 'test_CSS_1'
-            },
-            {
-                'id' : 2,
-                'title' : 'test_CSS_2'
-            },
-            {
-                'id' : 3,
-                'title' : 'test_CSS_3'
-            },
-            {
-                'id' : 4,
-                'title' : 'test_CSS_4'
-            }
+            { 'id' : 1, 'title' : 'test_CSS_1' },
+            { 'id' : 2, 'title' : 'test_CSS_2' },
+            { 'id' : 3, 'title' : 'test_CSS_3' },
+            { 'id' : 4, 'title' : 'test_CSS_4' }
         ]
     },
     {
+        'iCatNum'   : 4,
         'sCatName'  : 'JS',
         'aBoard'    :
         [
-            {
-                'id' : 1,
-                'title' : 'test_JS_1'
-            },
-            {
-                'id' : 2,
-                'title' : 'test_JS_2'
-            },
-            {
-                'id' : 3,
-                'title' : 'test_JS_3'
-            },
-            {
-                'id' : 4,
-                'title' : 'test_JS_4'
-            }
+            { 'id' : 1, 'title' : 'test_JS_1' },
+            { 'id' : 2, 'title' : 'test_JS_2' },
+            { 'id' : 3, 'title' : 'test_JS_3' },
+            { 'id' : 4, 'title' : 'test_JS_4' }
         ]
     },
     {
+        'iCatNum'   : 8,
         'sCatName'  : 'Other',
         'aBoard'    :
         [
-            {
-                'id' : 1,
-                'title' : 'test_Other_1'
-            },
-            {
-                'id' : 2,
-                'title' : 'test_Other_2'
-            },
-            {
-                'id' : 3,
-                'title' : 'test_Other_3'
-            },
-            {
-                'id' : 4,
-                'title' : 'test_Other_4'
-            }
+            { 'id' : 1, 'title' : 'test_Other_1' },
+            { 'id' : 2, 'title' : 'test_Other_2' },
+            { 'id' : 3, 'title' : 'test_Other_3' },
+            { 'id' : 4, 'title' : 'test_Other_4' }
         ]
     }
 ];
 
+forEach( ( oCategory, iIndex ) =>
+{
+    console.log( oCategory[ iIndex ].iCatNum + ' : ' + oCategory[ iIndex ].sCatName );
+    console.log( this.iCatNum + ' : ' + this.sCatName );
+});
 
 console.log( oCategory );
 
