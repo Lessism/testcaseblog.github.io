@@ -95,9 +95,9 @@ var oCategory =
     }
 ];
 
-forEach( ( oCategory, iIndex ) =>
+oCategory.each( ele =>
 {
-    console.log( oCategory[ iIndex ].iCatNum + ' : ' + oCategory[ iIndex ].sCatName );
+    console.log( ele.iCatNum + ' : ' + ele.sCatName );
     console.log( this.iCatNum + ' : ' + this.sCatName );
 });
 
